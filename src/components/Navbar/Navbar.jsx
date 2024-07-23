@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
+import lo from "../../assets/bg.png"
 
 const Navbar = () => {
   return (
@@ -11,29 +12,42 @@ const Navbar = () => {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-4 text-white font-bold text-2xl">
-              <img src={Logo} alt="" className="w-10" />
-              <span>TCJ-SPACE</span>
+              <img src={lo} alt="" className="w-20" />
+              {/* <span>Virti</span> */}
             </div>
             <div className="text-white hidden sm:block">
               <ul className="flex items-center gap-6 text-xl py-4 ">
                 <li>
+                  <a href="">Education</a>
+                </li>
+                <li>
                   <a href="#">About</a>
                 </li>
                 <li>
-                  <a href="#">Technology</a>
+                  <a href="#">Skills</a>
                 </li>
                 <li>
-                  <a href="#">Galaxy</a>
+                  <a href="#">Experience</a>
                 </li>
                 <li>
-                  <a href="#">Satelite</a>
+                  {/* <Link to="/projects">Projects</Link> */}
+                  Projects
+                </li>
+                <li>
+                  <a href="#">Connect</a>
                 </li>
               </ul>
             </div>
             <div>
-              <button className=" text-white border-2 border-white px-3 py-1 rounded-md">
+              {/* <button className=" text-white border-2 border-white px-3 py-1 rounded-md">
                 Login
+              </button> */}
+              <button className="text-white border-2 border-white px-3 py-1 rounded-md">
+                <a href="/Virti.pdf" download>
+                  Resume
+                </a>
               </button>
+
             </div>
           </div>
         </div>
@@ -43,3 +57,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+

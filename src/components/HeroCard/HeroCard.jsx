@@ -1,31 +1,34 @@
 import React from "react";
 import wave from "../../assets/wave Gif.gif";
-import { FaReact } from "react-icons/fa";
-import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
+// import { FaReact } from "react-icons/fa";
+// import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
+import { FaSchool } from "react-icons/fa6";
+import { LuSchool } from "react-icons/lu";
+import { IoSchoolSharp } from "react-icons/io5";
 
 const ServiceData = [
   {
-    title: "HST",
-    content: "300-1500km",
+    title: "10th-ICSE",
+    content: "RBK SCHOOL,MIRA ROAD",
     description:
-      "Used for astronomical observations, capturing stunning images of the universe.",
-    icon: <FaReact className="text-7xl" />,
+      "Percentage:91",
+    icon: <FaSchool  className="text-7xl" />,
     aosDelay: "300",
   },
   {
-    title: "ISS",
-    content: "500-1500km",
+    title: "12th-HSC",
+    content: "SVPV,DAHISAR",
     description:
-      ", it's a habitable artificial satellite orbiting Earth and serves as a space environment research laboratory",
-    icon: <FaShuttleSpace className="text-7xl" />,
+      "Percentage:87.17",
+    icon: <LuSchool  className="text-7xl" />,
     aosDelay: "500",
   },
   {
-    title: "GPS",
-    content: "300-1500km",
+    title: "B.TECH",
+    content: "DJSCE,VILE PARLE",
     description:
-      "Part of the Global Positioning System (GPS) used for navigation.",
-    icon: <FaSpaceAwesome className="text-7xl" />,
+      "CGPA:7.46",
+    icon: <IoSchoolSharp className="text-7xl" />,
     aosDelay: "700",
   },
 ];

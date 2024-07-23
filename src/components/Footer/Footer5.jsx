@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdCall, MdMessage } from "react-icons/md";
+import { FaEnvelope } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,15 +13,15 @@ const Footer = () => {
           {/* first column */}
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-              Be Ready To Grow
+            Get in touch
             </h1>
             <p className="text-gray-400">
-              Get exclusive{" "}
-              <span className=" text-white font-bold "> best update</span>{" "}
-              straight to your inbox.{" "}
+              Feel free to{" "}
+              <span className=" text-white font-bold "> connect</span>{" "}
+              with me.{" "}
             </p>
             <br />
-            <div className="flex items-center h-10">
+            {/* <div className="flex items-center h-10">
               <input
                 className="py-1 px-3 w-full h-[100%] inline-block focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 bg-gray-800 border-gray-200 border-2 "
                 type="text"
@@ -28,6 +30,17 @@ const Footer = () => {
               <button className="bg-orange-500 hover:bg-orange-500/75 h-full inline-block py-2 px-6 text-white">
                 Ok
               </button>
+            </div> */}
+             <div className="flex  gap-4 mb-4">
+             <a href=" mailto:shahvirti1720@gmail.com ">
+                <FaEnvelope className="text-4xl" />
+              </a>
+              <a href="https://github.com/Virtiii ">
+                <FaGithubSquare className="text-4xl" />
+              </a>
+              <a href="https://www.linkedin.com/in/virti-shah-1166b922a/">
+                <FaLinkedin className="text-4xl" />
+              </a>
             </div>
           </div>
           {/* Second column */}
@@ -62,19 +75,19 @@ const Footer = () => {
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Contact Us
+                  Contact Me
                 </h1>
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3">
                     <HiLocationMarker />
-                    <p>Noida, Uttar Pradesh</p>
+                    <p>Mumbai,Maharastra</p>
                   </div>
                   <div className="flex items-center gap-3 mt-3">
                     <MdMessage />
-                    <p>abc@gmail.com</p>
+                    <p>shahvirti1720@gmail.com</p>
                   </div>
                   <div className="flex items-center gap-3 mt-3">
-                    <MdCall />
+                    <MdCall/>
                     <p>+91 123456789</p>
                   </div>
                 </div>
@@ -85,9 +98,9 @@ const Footer = () => {
         <div className="hidden sm:block">
           <div className="flex justify-between items-center text-center py-6 border-t-2 border-gray-300/40">
             <span className="text-sm text-gray-400">
-              @copyright 2024 Travery || Dilshad
+              @copyright 2024 | All rights reserved
             </span>
-            <div className="flex items-center justify-center gap-4 mb-4">
+            {/* <div className="flex items-center justify-center gap-4 mb-4">
               <a href="#">
                 <FaInstagram className="text-4xl" />
               </a>
@@ -97,8 +110,10 @@ const Footer = () => {
               <a href="#">
                 <FaLinkedin className="text-4xl" />
               </a>
+            </div> */}
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <h2>Thank you for visiting <br />Have a good day!</h2>
             </div>
-
             <span className="text-sm text-gray-400 ">
               <ul className="flex gap-3">
                 <li className="hover:text-white">Privacy Policy</li>

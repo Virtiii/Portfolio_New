@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero.jsx";
-import HeroCard from "./components/HeroCard/HeroCard.jsx";
 import BgVideo from "./assets/earth-bg.mp4";
-import wave from "./assets/wave Gif.gif";
-import Rapidscat from "./components/Rapidscat/Rapidscat.jsx";
-import Satelite from "./components/Satelite/Satelite.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import Footer5 from "./components/Footer/Footer5.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import HeroCard from "./components/HeroCard/HeroCard";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience.jsx";
+import Projects from "./components/Projects/Projects";
+import Footer5 from "./components/Footer/Footer5";
 
 const App = () => {
   React.useEffect(() => {
@@ -17,7 +17,8 @@ const App = () => {
       duration: 1200,
       easing: "ease-in-out",
     });
-  });
+  }, []);
+
   return (
     <div className="">
       <div className="h-[700px] relative">
@@ -33,9 +34,10 @@ const App = () => {
         <Hero />
       </div>
       <HeroCard />
-      <Rapidscat />
-      <Satelite />
-      {/* <Footer /> */}
+      <About />
+      <Skills />
+      <Experience/><br /><br />
+      <Projects/><br /><br />
       <Footer5 />
     </div>
   );
