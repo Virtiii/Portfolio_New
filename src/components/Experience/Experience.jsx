@@ -3,6 +3,12 @@ import experienceData from './Experience';
 import './Experience.css'; 
 
 const Experience = () => {
+  const handleButtonClick = (url) => {
+    if (url) {
+      window.open(url, '_blank'); // Opens the URL in a new tab
+    }
+  };
+  
   return (
     <div className='bg'>
     <div className="container mx-auto py-12">
@@ -32,7 +38,7 @@ const Experience = () => {
                 <h3>{exp.posts}<br /><span>Tenure(in months)</span></h3>
               </div>
               <div className="actionBtn">
-                <button>Offer Letter</button>
+              <button onClick={() => handleButtonClick(exp.link)}>Offer Letter</button>
               </div>
             </div>
           </div>

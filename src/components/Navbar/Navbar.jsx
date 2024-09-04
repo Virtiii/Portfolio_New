@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import lo from "../../assets/bg.png"
+import lo from "../../assets/bg.png";
 
 const Navbar = () => {
   return (
@@ -18,36 +18,31 @@ const Navbar = () => {
             <div className="text-white hidden sm:block">
               <ul className="flex items-center gap-6 text-xl py-4 ">
                 <li>
-                  <a href="">Education</a>
+                  <a href="#education">Education</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#">Skills</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li>
-                  <a href="#">Experience</a>
+                  <a href="#experience">Experience</a>
                 </li>
                 <li>
-                  {/* <Link to="/projects">Projects</Link> */}
-                  Projects
+                  <a href="#projects">Projects</a>
                 </li>
                 <li>
-                  <a href="#">Connect</a>
+                  <a href="#connect">Connect</a>
                 </li>
               </ul>
             </div>
             <div>
-              {/* <button className=" text-white border-2 border-white px-3 py-1 rounded-md">
-                Login
-              </button> */}
               <button className="text-white border-2 border-white px-3 py-1 rounded-md">
                 <a href="/Virti.pdf" download>
                   Resume
                 </a>
               </button>
-
             </div>
           </div>
         </div>
@@ -57,7 +52,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-

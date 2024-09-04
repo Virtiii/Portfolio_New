@@ -1,4 +1,5 @@
 import React from "react";
+import './global.css';
 import BgVideo from "./assets/earth-bg.mp4";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -33,12 +34,24 @@ const App = () => {
         <Navbar />
         <Hero />
       </div>
-      <HeroCard />
-      <About />
-      <Skills />
-      <Experience/><br /><br />
-      <Projects/><br /><br />
-      <Footer5 />
+      <div id="education">
+        <HeroCard />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div><br />
+      <div id="connect">
+        <Footer5 />
+      </div>
     </div>
   );
 };
