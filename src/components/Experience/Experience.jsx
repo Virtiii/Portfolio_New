@@ -16,7 +16,7 @@ const Experience = () => {
       <p
     data-aos="fade-up"
     data-aos-delay="300"
-    className="text-sky-800 uppercase"
+    className="text-sky-800 uppercase font-bold"
   >
     Experience
     <br /><br />
