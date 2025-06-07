@@ -27,7 +27,7 @@ const ServiceData = [
     title: "B.TECH",
     content: "DJSCE,VILE PARLE",
     description:
-      "CGPA:7.46",
+      "CGPA:7.645",
     icon: <IoSchoolSharp className="text-7xl" />,
     aosDelay: "700",
   },

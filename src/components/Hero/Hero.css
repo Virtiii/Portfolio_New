@@ -1,8 +1,7 @@
-.rotate,
+/* .rotate,
 .rw,
 *:before,
 *:after {
-    /* padding: 0; */
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -11,21 +10,18 @@
 }
 
 body {
-    /* background-color: #0e6ffc; */
-    /* height: 100vh; */
-    /* display: grid; */
     place-items: center;
 }
+ img{
+    margin-top: 27%;
+ }
 
 .wrapper {
     box-sizing: content-box;
-    /* background-color: #ffffff; */
     height: 70px;
     padding: 50px 30px;
     display: flex;
-    /* border-radius: 8px; */
-    /* box-shadow: 0 20px 25px rgba(0,0,0,0.2); */
-    position: relative; /* Ensure the wrapper is positioned relative to move it */
+    position: relative; 
     top: -50px;
     left:-40px; 
 }
@@ -40,50 +36,60 @@ body {
     padding-left: 10px;
     color: #0e6ffc;
     animation: spin_words 10s infinite;
-    /* font-weight: bold; */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px) {
     .rw {
-      font-size: 30px; /* Decrease font size for smaller screens */
+      font-size: 45px;
+    }
+    img{
+        margin-top: 40%;
     }
   }
-  
-  @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 1280px) {
     .rw {
-      font-size: 20px; /* Further decrease font size for mobile screens */
+      font-size: 33px; 
     }
-  
-    .wrapper {
-      width: 80%; /* Adjusted width for smaller screens */
+    img{
+        margin-top: 45%;
     }
   }
-  @keyframes spin_words{
-    10%{
-        transform: translateY(-112%);
+@media screen and (max-width: 769px) {
+    .rw {
+      font-size: 27px; 
     }
-    25%{
-        transform: translateY(-100%);
+  }
+
+
+
+@keyframes spin_words { 
+    10% {
+        transform: translateY(-20%);
     }
-    35%{
+    25% {
+        transform: translateY(-105%);
+    }
+    35% {
         transform: translateY(-212%);
     }
-    50%{
+    50% {
         transform: translateY(-200%);
     }
-    60%{
+    60% {
         transform: translateY(-312%);
     }
-    75%{
+    75% {
         transform: translateY(-300%);
     }
-    85%{
+    85% {
         transform: translateY(-412%);
     }
-    100%{
-        transform: translateY(-400%);
+    100% {
+        transform: translateY(0%);
     }
 }
+
 .name {
     text-transform: uppercase;
     background-image: linear-gradient(-90deg,
@@ -98,13 +104,183 @@ body {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    /* text-fill-color: transparent; */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
     font-size: 100%;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+ */
+
+.rotate,
+.rw,
+*:before,
+*:after {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    height: 70px;
+    padding: 30px 20px;
+    display: flex;
+    position: relative;
+    top: -20px;
+    left: 0;
+}
+
+.words {
+    overflow: hidden;
+    margin-left:-35px;
+}
+
+.rw {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0e6ffc;
+    animation: spin_words 10s infinite;
+    font-size: 50px;
+}
+
+img {
+    /* margin-top: 60%; */
+}
+
+/* Mobile First Approach */
+/* @media screen and (min-width: 480px) {
+    .wrapper {
+        height: 50px;
+    }
+    .rw {
+        font-size: 28px;
+    }
+    img {
+        margin-top: 50%;
+    }
+} */
+
+/* @media screen and (min-width: 640px) {
+    .wrapper {
+        height: 50px;
+        padding: 40px 30px;
+        top: -30px;
+    }
+    .rw {
+        font-size: 30px;
+    }
+    img {
+        margin-top: 45%;
+    }
+} */
+/* 
+@media screen and (min-width: 768px) {
+    .wrapper {
+        height: 60px;
+        padding: 50px 30px;
+        top: -40px;
+        left: -20px;
+    }
+    .rw {
+        font-size: 33px;
+    }
+    img {
+        margin-top: 40%;
+    }
+} */
+
+@media screen and (max-width: 1280px) {
+      .wrapper {
+        height: 65px;
+    }
+    .rw { font-size: 38px; }
+}
+
+@media screen and (max-width: 1039px) {
+    .wrapper {
+        height: 60px;
+    }
+    .rw { font-size: 35px; }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        height: 55px;
+    }
+    .rw { font-size: 31px; }
+}
+
+@media screen and (max-width: 657px) {
+    .wrapper {
+        height: 50px;
+    }
+    .rw { font-size: 29px; }
+}
+
+@media screen and (max-width: 337px) {
+    .wrapper {
+        height: 3px;
+    }
+    .rw { font-size: 26px; }
+}
+
+/* Animation Styles */
+@keyframes spin_words {
+    10% {
+        transform: translateY(-20%);
+    }
+    25% {
+        transform: translateY(-105%);
+    }
+    35% {
+        transform: translateY(-212%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(-312%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    85% {
+        transform: translateY(-412%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.name {
+    text-transform: uppercase;
+    background-image: linear-gradient(-90deg,
+            #ff0000,
+            #ffff00,
+            #ff00f3,
+            #0033ff,
+            #ff00c4,
+            #ff0000);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: inherit;
 }
 
 @keyframes textclip {

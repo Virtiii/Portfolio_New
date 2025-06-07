@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div className="">
-      <div className="h-[700px] relative">
+      {/* <div className="h-[700px] relative">
         <video
           autoPlay
           loop
@@ -30,13 +30,25 @@ const App = () => {
           className="fixed right-0 top-0 h-[700px] w-full object-cover z-[-1]"
         >
           <source src={BgVideo} type="video/mp4" />
-        </video>
-        <Navbar />
+        </video> */}
+        <div className="relative w-full h-full min-h-screen">
+          <video
+            autoPlay
+            loop
+            muted
+            className="background-video fixed inset-0 w-full h-full object-cover z-[-1]"
+          >
+            <source src={BgVideo} type="video/mp4" />
+          </video>
+
+        <Navbar/>
         <Hero />
       </div>
-      <div id="education">
-        <HeroCard />
-      </div>
+      <div className="relative z-10 mt-0"> {/* Adjusted */}
+          <div id="education">
+            <HeroCard />
+          </div>
+        </div>
       <div id="about">
         <About />
       </div>

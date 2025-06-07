@@ -1,4 +1,17 @@
-// src/projects.js
+import crime from "/src/assets/crime.png";
+import email from "/src/assets/spam.png";
+import ref from "/src/assets/researchref.png";
+import fin from "/src/assets/fintrack.png";
+import tt from "/src/assets/tt.png";
+import tg from "/src/assets/travelgo.png";
+import sales from "/src/assets/sales.png";
+import spotify from "/src/assets/spotify.png";
+import netflix from "/src/assets/Netflix.png";
+import ss from "/src/assets/ss.png";
+import quote from "/src/assets/quote.png";
+import book from "/src/assets/book.png";
+import graph from "/src/assets/graph.png";
+
 const projects = [
     {
       name: "CRIME MANAGEMENT SYSTEM",
@@ -6,7 +19,7 @@ const projects = [
       description: "Managed and tracked details of victims, culprits, advocates, judges, and police personnel.",
       timeline: "Dec 2022 - Jan 2023",
       githubLink: "https://github.com/Virtiii/Crime-Management-System",
-      imageUrl: "/src/assets/crime.png"
+      imageUrl: crime
     },
     {
       name: "EMAIL SPAM CLASSIFIER",
@@ -14,7 +27,7 @@ const projects = [
       description: "Classified emails as spam or not spam using GNB and Random Forest.",
       timeline: "April 2024 - May 2024",
       githubLink: "https://github.com/Virtiii/Email-Spam-Classifier",
-      imageUrl: "/src/assets/spam.png"
+      imageUrl: email
     },
     {
       name: "RESEARCHREF",
@@ -22,31 +35,31 @@ const projects = [
       description: "Summarized research papers and identified limitations.",
       timeline: "June 2024 - July 2024",
       githubLink: "https://github.com/Virtiii/Datahathon1",
-       imageUrl: "/src/assets/researchref.png"
+       imageUrl: ref
     },
     {
       name: "FINTRACK",
       techStack: "HTML, CSS, JavaScript",
       description: "Tracked income, expenses, and overall balance with dynamic visualizations.",
-      timeline: "August 2024 - September 2024",
+      timeline: "Aug 2024 - Sep 2024",
       githubLink: "https://github.com/Virtiii/financeTrackerGithubCopilot2023",
-       imageUrl: "/src/assets/fintrack.png"
+       imageUrl: fin
     },
     {
       name: "TIMETABLE GENERATING SYSTEM",
-      techStack: "DBMS, PHP, AI",
+      techStack: "HTML, CSS, JavaScript, PHP",
       description: "Generated optimal academic timetables using Genetic Algorithm.",
-      timeline: "October 2023 - November 2023",
+      timeline: "Dec 2022 - Jan 2024",
       githubLink: "https://github.com/Virtiii/Timetable-Generating-System_IPD",
-       imageUrl: "/src/assets/tt.png"
+       imageUrl: tt
     },
     {
       name: "TRAVELGO",
       techStack: "React.js",
       description: "Allowed users to browse and book tours seamlessly.",
-      timeline: "December 2024 - January 2025",
+      timeline: "Dec 2023 - Jan 2024",
       githubLink: "https://github.com/Virtiii/TravelGo",
-       imageUrl: "/src/assets/travelgo.png"
+       imageUrl: tg
     },
     {
       name: "SALES ANALYSIS",
@@ -54,7 +67,7 @@ const projects = [
       description: "Conducted sales data analysis and created interactive dashboards.",
       timeline: "June 2024 - June 2024",
       githubLink: "https://github.com/Virtiii/Exploring_Sales-SQL-Tableau-",
-       imageUrl: "/src/assets/sales.png"
+       imageUrl: sales
     },
     {
       name: "SPOTIFY DATA ANALYSIS",
@@ -62,7 +75,7 @@ const projects = [
       description: "Conducted data exploration and analysis of dataset developed a Power BI dashboard for visualization.",
       timeline: "March 2024 - March 2024",
       githubLink: "https://github.com/Virtiii/Spotify_Data_Analysis-Python",
-      imageUrl: "/src/assets/spotify.png"
+      imageUrl: spotify
     },
     {
       name: "NETFLIX DATA ANALYSIS",
@@ -70,15 +83,15 @@ const projects = [
       description: "Conducted data exploration and analysis of dataset and developed a Tableau dashboard for visualization.",
       timeline: "June 2024 - June 2024",
       githubLink: "https://github.com/Virtiii/Netflix_data_analysis-Python_Tableau",
-      imageUrl: "/src/assets/netflix.png"
+      imageUrl: netflix
     },
     {
       name: "SHOPPING SECRETS",
       techStack: "HTML, CSS",
       description: "Developed an e-commerce platform for fashion items.",
-      timeline: "",
+      timeline: "July 2024 - July 2024",
       githubLink: "https://github.com/Virtiii/Shopping-Secrets",
-       imageUrl: "/src/assets/ss.png"
+       imageUrl: ss
     },
     {
       name: "RANDOM QUOTE GENERATOR",
@@ -86,15 +99,15 @@ const projects = [
       description: "Generated random quotes with each button click.",
       timeline: "Jan 2024- Jan 2024",
       githubLink: "https://github.com/Virtiii/Random-Quote-Generator",
-       imageUrl: "/src/assets/quote.png"
+       imageUrl: quote
     },
     {
       name: "BOOK RECOMMENDATION SYSTEM",
       techStack: "HTML, CSS, Python, Flask",
       description: "Recommended books based on user preferences and book characteristics.",
-      timeline: "March 2023 - March 2023",
+      timeline: "Jan 2024 - Jan 2024",
       githubLink: "https://github.com/Virtiii/Book-Recommendion-System",
-       imageUrl: "/src/assets/book.png"
+       imageUrl: book
     },
     {
       name: "SENTIMENT ANALYSIS USING NLTK",
@@ -102,7 +115,7 @@ const projects = [
       description: "Developed a sentiment analysis tool with NLTK, featuring advanced text preprocessing and VADER sentiment scoring, visualized with bar charts. ",
       timeline: "July 2024 - July 2024",
       githubLink: "https://github.com/Virtiii/Sentiment-Analysis",
-       imageUrl: "/src/assets/graph.png"
+       imageUrl: graph
     }
   ];
   

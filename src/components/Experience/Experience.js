@@ -1,4 +1,5 @@
-// experienceData.js
+import vanaha from '/src/assets/vanaha.png';
+import eve from '/src/assets/eve.png'; 
 const experienceData = [
   {
     id: 1,
@@ -7,7 +8,7 @@ const experienceData = [
     posts: 2,
     //   followers: "120k",
     //   following: 285,
-    imgSrc: "src/assets/vanaha.png",
+    imgSrc: vanaha,
     link: "https://www.linkedin.com/in/virti-shah-1166b922a/details/experience/"
   },
   {
@@ -17,7 +18,7 @@ const experienceData = [
     posts: 3,
     //   followers: "120k",
     //   following: 285,
-    imgSrc: "src/assets/eve.png",
+    imgSrc: eve,
     link: "https://www.linkedin.com/in/virti-shah-1166b922a/details/experience/"
   },
 ];
